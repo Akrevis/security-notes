@@ -1,0 +1,9 @@
+# 系统 / 编辑器临时文件
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak
+
+# 还没写完的 writeup（全是占位符，先不公开）
+# 等填好真实内容+截图后，删掉下面这行，再 git add 即可发布
+owasp-top10/文件上传漏洞-Upload-Labs通关与绕过总结.md
