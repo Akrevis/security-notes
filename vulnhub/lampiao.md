@@ -193,7 +193,7 @@ ssh tiago@172.20.26.164
 
 ### 4.2 路径 B：Drupalgeddon2 / CVE-2018-7600（备选思路）
 
-Lampião 的 1898 端口是 Drupal 7，未打补丁版本对 **Drupalgeddon2** 普遍可利用——这是比 SSH 爆破更「正统」的入口，可直接拿到 `www-data` shell。
+Lampião 的 1898 端口是 Drupal 7，未打补丁版本对 **Drupalgeddon2** 普遍可利用，可直接拿到 `www-data` shell。
 
 - **原理**：Drupal 7/8 的 Form API 对以 `#` 开头的数组键（如 `#post_render`、`#markup`）渲染处理不当，攻击者可在未认证状态下将回调函数注入表单渲染流程，造成**未授权远程代码执行（RCE）**。
 
@@ -345,7 +345,7 @@ flag: 9740616875908d91ddcdaa8aea3af366
 
 
 
-## 8. 防御建议（蓝队视角）
+## 8. 防御建议
 
 | 面 | 风险 | 加固措施 |
 | --- | --- | --- |
